@@ -10,7 +10,7 @@ export function Hero() {
         className="-top-24 left-0 lg:left-60 md:-top-20 2xl:-top-40 "
         fill="white"
       />
-      <div className="h-[40rem] w-full rounded-md flex  md:items-center justify-center antialiased bg-grid-white/[0.02] relative overflow-hidden">
+      <div className="h-[40rem] w-full rounded-md flex  md:items-center justify-center antialiased bg-grid-white/[0.01] relative overflow-hidden">
         <motion.div
           className="space-y-6 mt-[8rem] md:mt-0"
           initial={{ y: 20, opacity: 0 }}
