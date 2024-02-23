@@ -22,7 +22,7 @@ export function Hero() {
             className="text-5xl sm:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-br from-neutral-50 to-neutral-600 
      bg-opacity-50"
           >
-            Hello, I'm
+            Hello, I&apos;m
             <br /> Piyush Yadav
           </h1>
           <Separator className="h-2 w-40 rounded-full " />
