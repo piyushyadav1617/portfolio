@@ -23,8 +23,12 @@ const config = {
       screens: {
         "2xl": "1400px",
       },
+     
     },
     extend: {
+      screens: {
+        '3xl': '2000px',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

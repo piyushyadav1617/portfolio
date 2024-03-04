@@ -1,5 +1,5 @@
 "use client";
-
+import {IconType} from "react-icons"
 import { cn } from "@/utils/cn";
 import React, { ReactNode, useEffect, useState } from "react";
 
@@ -12,7 +12,7 @@ export const InfiniteMovingCards = ({
 }: {
   items: {
     name: string;
-    icon: ReactNode;
+    icon: IconType;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -72,7 +72,7 @@ export const InfiniteMovingCards = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-10  w-[90vw] sm:max-w-2xl lg:max-w-4xl 2xl:max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative z-10 w-[90vw] sm:max-w-3xl lg:max-w-4xl 2xl:max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
         className
       )}
     >
@@ -86,13 +86,13 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-28 md:w-40 max-w-full relative  flex-shrink-0 px-8 flex flex-col items-center justify-between text-neutral-400"
+            className="w-20 md:w-40 max-w-full relative  flex-shrink-0 px-6 flex flex-col items-center justify-between "
             key={item.name}
           >
-            <span className="relative z-2 text-5xl  ">
-              {item.icon}
-            </span>
-            <small>{item.name}</small>
+            
+              <item.icon className="relative z-2 text-4xl md:text-5xl text-neutral-400 "/>
+       
+            {/* <small>{item.name}</small> */}
           </li>
         ))}
       </ul>
