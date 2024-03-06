@@ -15,16 +15,14 @@ import {
   BiLogoDocker,
 } from "react-icons/bi";
 import { Line } from "./line";
-import Image from "next/image";
 export const Technologies = () => {
   return (
     <div className="h-[20rem] md:h-[40rem] flex flex-col py-0  items-center justify-evenly relative overflow-hidden ">
       <motion.h1
-        className="text-3xl  md:text-4xl font-semibold text-center bg-clip-text text-transparent p-4 bg-gradient-to-br from-neutral-50 to-neutral-600 
-     bg-opacity-50"
+        className="text-3xl md:text-4xl font-semibold text-center bg-clip-text text-transparent p-4 bg-gradient-to-br from-neutral-50 via-neutral-100 to-neutral-600 bg-opacity-50"
         initial={{ y: 20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true }}
+        // viewport={{ once: true }}
         transition={{ duration: 1}}
       >
         Technologies I work with
@@ -35,7 +33,7 @@ export const Technologies = () => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
+        // viewport={{ once: true }}
         transition={{ delay: 0.3, duration: 1 }}
       >
         <InfiniteMovingCards

@@ -21,7 +21,7 @@ export const PinContainer = ({
   );
 
   const onMouseEnter = () => {
-    setTransform("translate(-50%,-50%) rotateX(40deg) scale(0.8)");
+    setTransform("translate(-50%,-50%) rotateX(40deg) scale(0.9)");
   };
   const onMouseLeave = () => {
     setTransform("translate(-50%,-50%) rotateX(0deg) scale(1)");
@@ -30,7 +30,7 @@ export const PinContainer = ({
   return (
     <div
       className={cn(
-        "relative group/pin z-50  cursor-pointer",
+        "relative group/pin z-50  cursor-pointer ",
         containerClassName
       )}
       onMouseEnter={onMouseEnter}
@@ -47,12 +47,12 @@ export const PinContainer = ({
           style={{
             transform: transform,
           }}
-          className="absolute left-1/2 p-4 top-1/2  flex justify-start items-start rounded-2xl transition duration-700 overflow-hidden"
+          className="absolute left-1/2 p-4 top-1/2  flex justify-start items-start rounded-2xl transition duration-1000 overflow-hidden"
         >
           <div className={cn(" relative z-50 ", className)}>{children}</div>
         </div>
       </div>
-      <PinPerspective title={title} href={href}/>
+      <PinPerspective title={title} href={href} />
     </div>
   );
 };
@@ -65,20 +65,21 @@ export const PinPerspective = ({
   href?: string;
 }) => {
   return (
-    <motion.div className="pointer-events-none  w-96 h-80 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-[60] transition duration-500">
+    <motion.div 
+    transition={{ delay: 1}}
+    className="pointer-events-none  w-96 h-80 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-[60] transition duration-1000">
       <div className=" w-full h-full  flex-none  inset-0">
-        <div className="absolute z-20 top-0 right-[16%]  flex justify-center">
+        <div className="absolute z-20 top-0 right-[15%]  flex justify-center">
           <a
             href={href}
             target={"_blank"}
             className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950 py-0.5 px-4 ring-1 ring-white/10 "
           >
-            <h4 className="relative  font-bold inline-block py-0.5  bg-clip-text text-transparent p-4 bg-gradient-to-b from-orange-600  via-white to-green-600
-     bg-opacity-50 ">
+            <h4 className="relative font-bold inline-block py-0.5 text-neutral-100">
               {title}
             </h4>
 
-            <span className="absolute -bottom-0 right-8 h-px w-8 bg-gradient-to-r from-transparent via-white to-transparent  transition-opacity duration-500 group-hover/btn:opacity-40"></span>
+            <span className="absolute -bottom-0 right-[1.2rem] h-px w-8 bg-gradient-to-r from-transparent via-white to-transparent  transition-opacity duration-1000 group-hover/btn:opacity-40"></span>
           </a>
         </div>
 
@@ -87,7 +88,7 @@ export const PinPerspective = ({
             perspective: "1000px",
             transform: "rotateX(70deg) translateZ(0)",
           }}
-          className="absolute right-[6.5rem] top-1/2 ml-[0.09375rem] mt-4 -translate-x-1/2 -translate-y-1/2"
+          className="absolute right-[6rem] top-1/2 ml-[0.09375rem] mt-4 -translate-x-1/2 -translate-y-1/2"
         >
           <>
             <motion.div
@@ -154,10 +155,10 @@ export const PinPerspective = ({
         </div>
 
         <>
-          <motion.div className="absolute right-[6.7rem] bottom-1/2 bg-gradient-to-b from-transparent via-neutral-50 to-neutral-600 translate-y-[14px] w-px h-20 group-hover/pin:h-40 blur-[2px]" />
-          <motion.div className="absolute right-[6.7rem] bottom-1/2 bg-gradient-to-b from-transparent to-neutral-50 translate-y-[14px] w-px h-20 group-hover/pin:h-40  " />
-          <motion.div className="absolute right-[6.7rem] translate-x-[1.5px] bottom-1/2 bg-neutral-50 translate-y-[14px] w-[4px] h-[4px] rounded-full z-40 blur-[3px]" />
-          <motion.div className="absolute right-[6.7rem] translate-x-[0.5px] bottom-1/2 bg-neutral-50 translate-y-[14px] w-[2px] h-[2px] rounded-full z-40 " />
+          <motion.div className="absolute right-24 bottom-1/2 bg-gradient-to-b from-transparent via-neutral-50 to-neutral-600 translate-y-[14px] w-px h-0 group-hover/pin:h-40 blur-[2px]" />
+          <motion.div className="absolute right-24 bottom-1/2 bg-gradient-to-b from-transparent to-neutral-50 translate-y-[14px] w-px h-0 group-hover/pin:h-40  " />
+          <motion.div className="absolute right-24 translate-x-[1.5px] bottom-1/2 bg-neutral-50 translate-y-[14px] w-[4px] h-[4px] rounded-full z-40 blur-[3px]" />
+          <motion.div className="absolute right-24 translate-x-[0.5px] bottom-1/2 bg-neutral-50 translate-y-[14px] w-[2px] h-[4px] rounded-full z-40 " />
         </>
       </div>
     </motion.div>

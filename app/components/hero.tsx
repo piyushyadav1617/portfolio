@@ -50,7 +50,7 @@ export function Hero() {
             <Separator className="h-2 w-40 rounded-full " />
           </motion.div>
           <motion.h2
-            className="text-2xl font-semibold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-600 
+            className="text-2xl font-semibold bg-clip-text text-transparent bg-gradient-to-br from-neutral-50 to-neutral-600 
      bg-opacity-50"
             initial={{ y: 20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -58,8 +58,6 @@ export function Hero() {
             transition={{
               delay: 0.5,
               duration: 0.5,
-              // type: "spring",
-              // stiffness: 50,
             }}
           >
             Full stack developer

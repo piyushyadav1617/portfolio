@@ -16,7 +16,7 @@ export const Line: React.FC<LineProps> = ({ className }) => {
   const animationProps = {
     initial: { scaleX: 0 },
     whileInView: { scaleX: 1 },
-    viewport: { once: true },
+    // viewport: { once: true },
     transition: { duration: 1 },
   };
 
