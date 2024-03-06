@@ -15,7 +15,7 @@ export const Connect = () => {
           className="text-3xl md:text-4xl font-semibold text-center bg-clip-text text-transparent p-4 bg-gradient-to-br from-neutral-50 via-neutral-100 to-neutral-600 bg-opacity-"
           initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          // viewport={{ once: true }}
+          viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
           Connect with me 
@@ -26,7 +26,7 @@ export const Connect = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          // viewport={{ once: true }}
+          viewport={{ once: true }}
           transition={{ duration: 1 }}
           className="mt-10"
         >
@@ -49,7 +49,7 @@ export const Connect = () => {
         className="w-full"
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
-        // viewport={{ once: true }}
+        viewport={{ once: true }}
         transition={{ duration: 1 }}
       >
         <div className="flex justify-center gap-10 md:gap-20 h-40">
@@ -61,14 +61,14 @@ export const Connect = () => {
                 whileTap={{ scale: 0.9 }}
               >
                 <Link href={s.link} target="_blank">
-                  <s.icon className="text-4xl text-neutral-300" />
+                  <s.icon className="text-2xl md:text-4xl text-neutral-400" />
                 </Link>
               </motion.button>
             );
           })}
         </div>
         <div className="w-full text-center">
-          <span className="text-neutral-200">yadavpiyush222@gmail.com</span>
+          <span className="text-neutral-300">yadavpiyush222@gmail.com</span>
         </div>
       </motion.div>
     </div>
