@@ -11,7 +11,6 @@ import {
   BiLogoNodejs,
   BiLogoCss3,
   BiLogoTailwindCss,
-  BiLogoAws,
   BiLogoDocker,
 } from "react-icons/bi";
 import { Line } from "./line";
@@ -39,7 +38,7 @@ export const Technologies = () => {
         <InfiniteMovingCards
           items={testimonials}
           direction="right"
-          speed="slow"
+          speed="normal"
         />
       </motion.div>
     </div>
@@ -79,10 +78,10 @@ const testimonials = [
     name: "tailwind",
     icon: BiLogoTailwindCss,
   },
-  {
-    name: "AWS",
-    icon: BiLogoAws,
-  },
+  // {
+  //   name: "AWS",
+  //   icon: BiLogoAws,
+  // },
   {
     name: "Docker",
     icon: BiLogoDocker,

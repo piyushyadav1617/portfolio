@@ -2,8 +2,6 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-
-// Import utility function for classnames. Ensure the path is correct.
 import { cn } from '@/utils/cn';
 
 interface LineProps {
@@ -11,7 +9,7 @@ interface LineProps {
 }
 
 export const Line: React.FC<LineProps> = ({ className }) => {
-  // Define reusable properties to avoid repetition
+
   const baseStyle = "absolute bg-gradient-to-r from-transparent to-transparent h-px w-3/4";
   const animationProps = {
     initial: { scaleX: 0 },

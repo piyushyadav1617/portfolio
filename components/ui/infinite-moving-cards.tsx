@@ -89,10 +89,7 @@ export const InfiniteMovingCards = ({
             className="w-12 md:w-40 max-w-full relative  flex-shrink-0 px-2 md:px-6 flex flex-col items-center justify-between "
             key={item.name}
           >
-            
               <item.icon className="relative z-2 text-4xl md:text-5xl text-neutral-400 "/>
-       
-            {/* <small>{item.name}</small> */}
           </li>
         ))}
       </ul>

@@ -10,7 +10,19 @@ export function Hero() {
         className="-top-36 -left-40 lg:left-60 md:-top-20 2xl:-top-40 "
         fill="white"
       />
-      <div className="h-[40rem] w-full rounded-md flex  md:items-center justify-center  antialiased bg-dot-neutral-200/5 relative overflow-hidden">
+      <div className="h-[40rem] w-full rounded-md flex  md:items-center justify-center  antialiased bg-dot-neutral-200/20 relative overflow-hidden">
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-background  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,background)]"></div>
+      <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{
+            delay: 0.5,
+            duration: 1,
+          }}
+          >
+           
+          </motion.div>
         <div className="space-y-4 mt-[8rem] md:mt-0">
           <motion.h1
             className="text-5xl sm:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-neutral-50 to-neutral-600 
@@ -18,7 +30,7 @@ export function Hero() {
             initial={{ y: 20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5}}
+            transition={{ duration: 0.5 }}
           >
             Hello, I&apos;m
           </motion.h1>
@@ -31,13 +43,12 @@ export function Hero() {
             transition={{
               delay: 0.2,
               duration: 0.5,
-       
             }}
           >
             Piyush Yadav
           </motion.h1>
           <motion.div
-            initial={{ scaleX:0, opacity: 0 }}
+            initial={{ scaleX: 0, opacity: 0 }}
             whileInView={{ scaleX: 1, opacity: 1 }}
             viewport={{ once: true }}
             transition={{
@@ -67,3 +78,4 @@ export function Hero() {
     </div>
   );
 }
+

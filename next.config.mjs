@@ -1,4 +1,11 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+// ES Module syntax for next.config.mjs
 
-export default nextConfig;
+const nextConfig = {
+    images: {
+      domains: ['images.unsplash.com'],
+    },
+    // any other configurations you have
+  };
+  
+  export default nextConfig;
+  

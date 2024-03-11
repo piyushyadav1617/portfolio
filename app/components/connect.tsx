@@ -9,7 +9,7 @@ import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export const Connect = () => {
   return (
-    <div className="  overflow-hidden space-y-10 mt-40">
+    <div className="min-h-screen overflow-hidden space-y-10 mt-40">
       <div className="relative">
         <motion.h1
           className="text-3xl md:text-4xl font-semibold text-center bg-clip-text text-transparent p-4 bg-gradient-to-br from-neutral-50 via-neutral-100 to-neutral-600 bg-opacity-"
@@ -20,7 +20,7 @@ export const Connect = () => {
         >
           Connect with me 
         </motion.h1>
-        <Line className="top-24 md:top-24" />
+        <Line className="top-24" />
       </div>
       <div className="flex items-center justify-center ">
         <motion.div
@@ -33,37 +33,32 @@ export const Connect = () => {
           <PinContainer
             title="India"
             href="#"
-            className="w-[500px] bg-transparent overflow-hidden mt-6"
+            className="w-[500px] p-0  bg-transparent overflow-hidden"
           >
             <Image
               src="/map.svg"
               width={500}
               height={200}
               alt=""
-              className="my-20 "
+              className=""
             />
           </PinContainer>
         </motion.div>
       </div>
       <motion.div
-        className="w-full"
+        className="w-full mt-20"
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
       >
-        <div className="flex justify-center gap-10 md:gap-20 h-40">
+        <div className="flex justify-center gap-10 md:gap-20 h-20">
           {socials.map((s) => {
             return (
-              <motion.button
-                key={s.name}
-                whileHover={{ scale: 1.4 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <Link href={s.link} target="_blank">
-                  <s.icon className="text-2xl md:text-4xl text-neutral-400" />
+                <Link key={s.name} href={s.link} target="_blank" className="w-fit h-fit">
+                  <s.icon className="w-8 h-8 text-neutral-400 hover:text-neutral-100" />
                 </Link>
-              </motion.button>
+              
             );
           })}
         </div>

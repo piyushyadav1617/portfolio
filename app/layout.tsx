@@ -26,7 +26,7 @@ export default function RootLayout({
         )}
       >
         <Navbar />
-        <div className="mx-5 sm:mx-10 md:mx-auto md:w-[700px] lg:w-[990px] 2xl:w-[1400px] overflow-x-hidden">
+        <div className=" md:mx-auto md:w-[700px] lg:w-[990px] 2xl:w-[1400px] overflow-x-hidden">
         {children}
         </div>
       </body>  
