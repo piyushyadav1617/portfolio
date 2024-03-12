@@ -16,24 +16,27 @@ import {
 import { Line } from "./line";
 export const Technologies = () => {
   return (
-    <div className="h-[20rem] md:h-[40rem] flex flex-col py-0  items-center justify-evenly relative overflow-hidden ">
+    <div className="min-h-[60vh] mx-5 my-20 md:mx-auto overflow-hidden">
       <motion.h1
-        className="text-3xl md:text-4xl font-semibold text-center bg-clip-text text-transparent p-4 bg-gradient-to-br from-neutral-50 via-neutral-100 to-neutral-600 bg-opacity-50"
+        className="text-3xl md:text-4xl py-2  antialiased  font-semibold text-center bg-clip-text text-transparent bg-gradient-to-t from-neutral-50 to-neutral-700 bg-opacity-50"
         initial={{ y: 20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once:true }}
-        transition={{ duration: 1}}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
       >
         Technologies I work with
       </motion.h1>
-      
-       <Line className="top-[10rem] md:top-[15rem]"/>
-      
+
+      <div className="top-2 md:top-8 relative w-full">
+        <Line/>
+      </div>
+
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 0.3, duration: 1 }}
+        className="mt-40"
       >
         <InfiniteMovingCards
           items={testimonials}

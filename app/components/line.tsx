@@ -15,7 +15,7 @@ export const Line: React.FC<LineProps> = ({ className }) => {
     initial: { scaleX: 0 },
     whileInView: { scaleX: 1 },
     viewport: { once: true },
-    transition: { duration: 1 },
+    transition: { duration: 0.5 },
   };
 
   return (
@@ -23,15 +23,15 @@ export const Line: React.FC<LineProps> = ({ className }) => {
       <motion.div
         className={cn(`${baseStyle} via-neutral-500 blur-md h-[2px] `, className)}
         {...animationProps}
-        transition={{ ...animationProps.transition, delay: 0.3 }}
+        transition={{ ...animationProps.transition, delay: 0.2 }}
       />
       <motion.div
-        className={cn(`${baseStyle} via-neutral-500`, className)}
+        className={cn(`${baseStyle} via-neutral-500 h-px`, className)}
         {...animationProps}
-        transition={{ ...animationProps.transition, delay: 0.3 }}
+        transition={{ ...animationProps.transition, delay: 0.2 }}
       />
       <motion.div
-        className={cn("absolute bg-gradient-to-r from-transparent via-neutral-100 to-transparent h-[5px] w-1/4 blur-md", className)}
+        className={cn("absolute bg-gradient-to-r from-transparent via-neutral-100 to-transparent h-[5px] w-1/4 blur-lg", className)}
         {...animationProps}
       />
       <motion.div

@@ -23,11 +23,10 @@ const config = {
       screens: {
         "2xl": "1400px",
       },
-     
     },
     extend: {
       screens: {
-        '3xl': '2000px',
+        "3xl": "2000px",
       },
       colors: {
         border: "hsl(var(--border))",
@@ -101,6 +100,14 @@ const config = {
             opacity: "0",
           },
         },
+        shimmer: {
+          from: {
+            backgroundPosition: "0 0",
+          },
+          to: {
+            backgroundPosition: "-200% 0",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -109,14 +116,13 @@ const config = {
         spotlight: "spotlight 2s ease .75s 1 forwards",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
-          
+        shimmer: "shimmer 1s linear infinite",
       },
-      
     },
   },
   plugins: [
     require("tailwindcss-animate"),
-  require('tailwind-scrollbar-hide'),
+    require("tailwind-scrollbar-hide"),
     addVariablesForColors,
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
