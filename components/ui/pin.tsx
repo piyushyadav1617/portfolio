@@ -21,16 +21,16 @@ export const PinContainer = ({
   );
 
   const onMouseEnter = () => {
-    setTransform("translate(-50%,-50%) rotateX(45deg)");
+    setTransform("translate(-50%,-50%) rotateX(45deg)  scale(0.8)");
   };
   const onMouseLeave = () => {
-    setTransform("translate(-50%,-50%) rotateX(0deg) ");
+    setTransform("translate(-50%,-50%) rotateX(0deg) scale(1) ");
   };
 
   return (
     <div
       className={cn(
-        "relative group/pin   cursor-pointer  ",
+        "relative group/pin cursor-pointer  ",
         containerClassName
       )}
       onMouseEnter={onMouseEnter}
@@ -52,7 +52,6 @@ export const PinContainer = ({
           <div className={cn(" relative", className)}>{children}</div>
         </div>
       </div>
-      <PinPerspective title={title} href={href} />
     </div>
   );
 };

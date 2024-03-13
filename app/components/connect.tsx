@@ -22,7 +22,7 @@ export const Connect = () => {
       <div className="top-2 md:top-8 relative w-full">
         <Line />
       </div>
-      <div className="mt-20 flex flex-col items-center justify-center">
+      <div className="mt-20 flex flex-col items-center justify-center relative h-[300px]">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
