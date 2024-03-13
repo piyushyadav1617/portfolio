@@ -23,7 +23,7 @@ export function ThreeDCardDemo({
 }: Props) {
   return (
     <CardContainer>
-      <CardBody className="relative group/card border-neutral-800 border-b-2 border-t border-x bg-transparent w-auto sm:w-[30rem] h-auto rounded-xl p-6 hover:animate-shimmer items-center justify-center  bg-[linear-gradient(110deg,#09090b,45%,#18181b,55%,#09090b)] bg-[length:200%_100%]   transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-400 focus:ring-offset-2 focus:ring-offset-neutral-50">
+      <CardBody className="relative group/card border-neutral-800 border-b-2 border-t border-x bg-transparent w-auto md:w-[20rem] 2xl:w-[30rem] max-w-[30rem] h-auto rounded-xl p-6 hover:animate-shimmer items-center justify-center  bg-[linear-gradient(110deg,#09090b,45%,#18181b,55%,#09090b)] bg-[length:200%_100%]   transition-colors focus:outline-none focus:ring-2 focus:ring-neutral-400 focus:ring-offset-2 focus:ring-offset-neutral-50">
         <CardItem
           translateZ="50"
           className="text-3xl font-semibold bg-clip-text text-transparent bg-gradient-to-br from-neutral-50  to-neutral-600 bg-opacity-50"
