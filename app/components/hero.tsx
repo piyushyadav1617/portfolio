@@ -54,8 +54,6 @@ export function Hero() {
             transition={{
               delay: 0.7,
               duration: 0.5,
-              type: "spring",
-              stiffness: 50,
             }}
           >
             <Separator className="h-2 w-40 rounded-full bg-neutral-600" />
