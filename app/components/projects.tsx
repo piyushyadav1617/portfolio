@@ -53,11 +53,11 @@ const projects: {
 }[] = [
   {
     id: 0,
-    title: "Tracker",
-    description: "A project management app",
-    img: "/tracker.png",
-    github: "https://github.com/piyushyadav1617/tracker",
-    live: "https://tracker-topaz-two.vercel.app/",
+    title: "PayPulse",
+    description: "A digital wallet",
+    img: "/paypulse.png",
+    github: "https://github.com/piyushyadav1617/payPulse",
+    live: "https://github.com/piyushyadav1617/payPulse",
   },
   {
     id: 1,
@@ -67,4 +67,12 @@ const projects: {
     github: "https://github.com/One-Click-Auth/auth_frontend",
     live: "https://trustauthx.com/",
   },
+  {
+    id: 2,
+    title: "Tracker",
+    description: "A project management app",
+    img: "/tracker.png",
+    github: "https://github.com/piyushyadav1617/tracker",
+    live: "https://tracker-topaz-two.vercel.app/",
+  }
 ];

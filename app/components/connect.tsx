@@ -65,9 +65,6 @@ export const Connect = () => {
             );
           })}
         </div>
-        <div className="w-full text-center">
-          <span className="text-neutral-300">yadavpiyush222@gmail.com</span>
-        </div>
       </motion.div>
     </div>
   );
